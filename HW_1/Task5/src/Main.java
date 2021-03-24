@@ -1,16 +1,15 @@
 import java.util.Arrays;
-import java.util.Collections;
 
 public class Main {
-    public static void main (String [] args){
+    public static void main(String[] args) {
 
-        Integer [] task5 = new Integer[]  {3, 2, 3, 1, 4, 2, 8, 3};
+        Integer[] task5 = new Integer[]{3, 2, 3, 1, 4, 2, 8, 3};
 
-        System.out.println ("Array: " + Arrays.toString (task5));
+        System.out.println("Array: " + Arrays.toString(task5));
 
-        for(int  i = 0; i < task5.length; i++) {
-            for(int j = i+1; j < task5.length; j++) {
-                if (task5[i] == task5[j]) {
+        for (int i = 0; i < task5.length; i++) {
+            for (int j = i + 1; j < task5.length; j++) {
+                if (task5[i].equals(task5[j])) {
                     task5[j] = 0;
 
                 }

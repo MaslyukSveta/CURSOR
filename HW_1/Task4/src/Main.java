@@ -1,11 +1,11 @@
 import java.util.Arrays;
 
 public class Main {
-    public static void main (String [] args){
+    public static void main(String[] args) {
 
-        Integer [] task4 = new Integer[]  {1, 2, 4, 1};
+        Integer[] task4 = new Integer[]{1, 2, 4, 1};
 
-        System.out.println ("Array: " + Arrays.toString (task4));
+        System.out.println("Array: " + Arrays.toString(task4));
 
         double average = 0;
         if (task4.length > 0) {
