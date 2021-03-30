@@ -8,18 +8,18 @@ public class Fractions {
     public Fractions(long numerator, short denominator) {
         if (denominator == 0) {
             System.out.println("Denominator can`t be zero!");
-
-        }
-        else {
+        } else {
             this.numerator = numerator;
             this.denominator = denominator;
         }
     }
+
     public Fractions addition(Fractions fractions) {
         long resNumerator = numerator * fractions.denominator + fractions.numerator * denominator;
         short resDenominator = (short) (denominator * fractions.denominator);
         return new Fractions(resNumerator, resDenominator);
     }
+
     public Fractions subtraction(Fractions fractions) {
         long resNumerator = numerator * fractions.denominator - fractions.numerator * denominator;
         short resDenominator = (short) (denominator * fractions.denominator);
@@ -50,6 +50,4 @@ public class Fractions {
     public String toString() {
         return numerator == 0 ? "0" : numerator + "/" + denominator;
     }
-
-
 }

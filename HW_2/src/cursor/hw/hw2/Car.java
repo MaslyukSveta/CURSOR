@@ -1,8 +1,8 @@
 package cursor.hw.hw2;
 
 public class Car {
+
     private final int maxSpeed = 210;
-    //Написать класс «автомобиль», который должен уметь заводится, глушить мотор, ехать и держать необходимую скорость.
     private boolean Engine = false;
     private int currentSpeed;
 
